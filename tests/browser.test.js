@@ -34,3 +34,8 @@ describe('Clicking "Pusha till stacken"', () => {
         await alert.accept();
     });
 });
+
+test('kollar om sidans huvudrubrik är korrekt', async () => {
+    let h1Text = await driver.findElement(By.css('h1')).getText();
+    expect(h1Text).toEqual("Det här är helt fel rubrik");
+});
