@@ -20,5 +20,5 @@ test('peek on stack with two or more elements returns the top element', () => {
 
 test('kollar om push faktiskt lägger till något', () => {
     stack.push("äpple");
-    expect(stack.peek()).toBe("päron"); 
+    expect(stack.peek()).toBe("äpple"); 
 });
